@@ -6,33 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <link rel="stylesheet" href="laboratorio.css">
   <title>Renato Graca</title>
 </head>
 <body>
-  <header>
-    <h1>&ltRenato Graça/&gt</h1>
-  </header>
-  <section id="minha-imagem">
-    <img src="">
-    <h2>Olá,</h2>
+  <section id="estatica">
+    <header>
+      <h1>&ltRenato Graça/&gt</h1>
+    </header>
+    <section id="minha-img">
+      <img src="images/euzin.jpeg">
+      <h2 id="ola">Olá,</h2>
+    </section>
+    <section id="sobre">
+      <p>
+        Me chamo Renato Graça,
+        <br>e adoro esportes e ler livros, mas o que eu gosto mesmo de fazer é 
+        <br> transformar linhas de comando em um computador em soluções e inovações.
+        <br> Veja meus trabalhos em meu laboratório está aqui do lado ->
+        <br>Me siga nas redes sociais!
+      </p>
+      <div class="vetor_img">
+        <img src="images/Web_Developer.png">
+      </div>
+    </section>
+    <section id="contato">
+      <a href="https://www.linkedin.com/in/renato-graca/">LinkedIn</a>
+    </section>
+    <footer id="roda-pe">
+      <strong>Todos os direitos reservados</strong>
+    </footer>
   </section>
-  <section id="sobre">
-    <p>
-      Me chamo Renato Graça,
-      <br>e adoro esportes e ler livros, mas o que eu gosto mesmo de fazer é 
-      <br> transformar linhas de comando em um computador em soluções e inovações.
-      <br> Veja meus trabalhos em meu laboratório está aqui do lado ->
-      <br>Me siga nas redes sociais!
-    </p>
-    <div>
-      <img src="images/Web_Developer.png">
-    </div>
+  <section id="laboratorio">
+    <article class="projetos">
+      <a href="https://speciale-app-receitas.netlify.app/" >
+        <div class="card">
+          <img src="images/projetos/app_receita.jpg" alt="app de receitas">
+          <p>
+            Como foi feito:
+            <br>Utilizando Redux para gerenciar estado
+            <br>biblioteca React-Redux |
+            React Hook useState
+            <br>React Hook useEffect |
+            Criar Hooks customizados
+          </p>
+        </div>
+      </a>
+    </article>
   </section>
-  <section id="contato">
-    <a href="https://www.linkedin.com/in/renato-graca/">LinkedIn</a>
-  </section>
-  <footer id="roda-pe">
-    <strong>Todos os direitos reservados</strong>
-  </footer>
 </body>
 </html>

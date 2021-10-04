@@ -1,0 +1,23 @@
+#laboratorio {
+  overflow: auto;
+}
+
+.card {
+  border-radius: 2.5em;
+  box-shadow: 0 0 5px 5px #004971;
+  overflow: hidden;
+
+  margin: 1em;
+  padding: 1em;
+}
+
+.card img {
+  border-radius: 2em 2em 0 0;
+  width: 100%;
+}
+.card-body {
+  border-radius: 25px solid #ff5444;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

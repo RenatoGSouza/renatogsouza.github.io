@@ -1,3 +1,32 @@
 body {
   font-family: Play;
+  background-color: #1c1c1e;
+  color: #edf6f9;
+  display: flex;
+  max-height: 98vh;
+}
+
+a {
+  text-decoration: none;
+  color: #edf6f9;
+}
+
+#minha-img {
+  position: relative;
+  display: flex;
+}
+
+#ola {
+  position: absolute;
+  bottom: 0;
+  left: 10em;
+}
+
+#minha-img img {
+  width: 10em;
+  border-radius: 25em;
+}
+
+.vetor_img img {
+  width: 30em;
 }
