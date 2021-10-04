@@ -1,23 +1,76 @@
-#laboratorio {
-  overflow: auto;
+
+.projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.card {
-  border-radius: 2.5em;
-  box-shadow: 0 0 5px 5px #004971;
+.projetos .card {
+  color: #1c1c1e;
+  align-items: center;
+  display: flex;
+  background-color: #edf6f9;
+  justify-content: center;
+  border-radius: 25px;
+  box-shadow: 0 0 5px 1px #48bfe3;
   overflow: hidden;
-
-  margin: 1em;
-  padding: 1em;
+  position: absolute;
+  pointer-events: none;
+  margin: 1.5em;
+  padding: 0.5em;
+  opacity: 0;
+  animation: animate 15s linear infinite;
+  animation-delay: calc(3s * var(--delay));
 }
 
+.projetos:hover .card {
+  animation-play-state: paused;
+}
+
+.projetos .card:last-child{
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.5);
+  }
+  5%, 20% {
+    opacity: 0.4;
+    transform: translateY(100%) scale(0.7);
+  }
+  25%, 40% {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0%) scale(1);
+  }
+  45%, 60% {
+    opacity: 0.4;
+    transform: translateY(-100%) scale(0.7);
+  }
+  65%, 100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.5);
+  }
+}
 .card img {
-  border-radius: 2em 2em 0 0;
-  width: 100%;
+  border-radius: 1.5em;
+  width: 50%;
+  max-height: 10em;
 }
-.card-body {
-  border-radius: 25px solid #ff5444;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+
+.card a {
+  padding: 7px 18px;
+  background: linear-gradient(to bottom, #004971 0%, #48bfe3 100%);
+  border-radius: 1.5em;
+}
+
+
+.details a{
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  bottom: 0;
 }
