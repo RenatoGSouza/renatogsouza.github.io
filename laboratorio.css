@@ -67,10 +67,14 @@
   border-radius: 1.5em;
 }
 
+.details {
+  margin: 5px;
+}
 
-.details a{
-  position: absolute;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  bottom: 0;
+.links{
+  display: flex;
+}
+
+.links a {
+  margin-right: 5px;
 }

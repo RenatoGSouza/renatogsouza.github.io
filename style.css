@@ -9,7 +9,6 @@ body {
   background-color: #1c1c1e;
   color: #edf6f9;
   display: flex;
-  max-height: 98vh;
 }
 
 a {
@@ -18,12 +17,13 @@ a {
 }
 
 #estatica {
-  height: 98vh;
   border-right: 1px solid #edf6f9;
   padding: 0 2em;
+  width: 50vw;
 }
 
 #laboratorio {
   overflow: auto;
   margin: 2em auto;
+  width: 50vw;
 }
